@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+ <html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./table.css">
+    </head>
+    <body>
+
+    
+        <div id="input-container"><input type="text" id = "search-form" onkeyup="search()" placeholder =" &#128269 Search by Name or Email"/></div>
+        
+        <table id = "data-table" class="table">
+            <thead class="data-table-header">
+                <tr class="data-table-header-row">
+                    <th class="data-table-header-cell">ID &#8645</th>
+                    <th class="data-table-header-cell">First Name &#8645</th>
+                    <th class="data-table-header-cell">Last Name &#8645</th>
+                    <th class="data-table-header-cell">Email &#8645</th>
+                    <th class="data-table-header-cell"> Gender &#8645</th>
+                    <th class="data-table-header-cell">Payment &#8645</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+
+        </table>
+
+        <div class="pagination-block">
+           <div class="navigation-button-container"><span class="page-button" id="prev-button">&#8592Prev</span></div>
+           <div> <span id="page-number" class="page-number-button"></span></div>
+           <div class="navigation-button-container"><span class="page-button" id="next-button">Next&#8594</span></div>
+          </div>
+      
+        <script src="./table.js"></script>
+       
+        </script>
+        
+    </body>
+</html>

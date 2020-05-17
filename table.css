@@ -1,0 +1,139 @@
+body {
+  width: 100%;
+  min-width: 1200;
+  min-height: 100vh;
+  background-image: linear-gradient(
+    to right top,
+    #051937,
+    #044268,
+    #007199,
+    #00a3c6,
+    #12d8eb
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+#data-table {
+  background: aliceblue;
+  width: 80%;
+  min-width: 800px;
+  align-self: center;
+  justify-content: space-between;
+  border: 2px groove #0082c8;
+  border-radius: 0px 0px 10px 10px;
+  white-space: nowrap;
+  border-spacing: 0;
+  padding-bottom: 5px;
+}
+
+tbody {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.data-table-header-row {
+  background: #0082c8;
+  color: snow;
+  height: 40px;
+  border-collapse: collapse;
+  cursor: pointer;
+  font-family: sans-serif;
+}
+.data-table-header-cell:hover {
+  background: rgb(1, 118, 180);
+}
+.data-table-header-cell:active {
+  background: rgb(1, 118, 180);
+}
+
+tr {
+  padding: 5px;
+  height: 28px;
+}
+td {
+  text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+  background: aliceblue;
+}
+tbody tr:nth-child(even) {
+  background: rgb(223, 237, 250);
+}
+tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
+
+.pagination-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: black;
+  align-self: center;
+  margin-top: 20px;
+  align-items: center;
+}
+.page-button {
+  background-color: #0082c8;
+  border-radius: 10px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-right: 12px;
+  padding-left: 12px;
+  font-family: sans-serif;
+  text-align: center;
+  color: snow;
+  align-self: center;
+  cursor: pointer;
+}
+.page-button:hover {
+  background: rgb(1, 118, 180);
+}
+.page-number-container {
+  background-color: aliceblue;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+}
+
+.page-number-container:hover {
+  background-color: rgb(188, 218, 247);
+  cursor: pointer;
+}
+.page-number-container:focus {
+  background-color: rgb(174, 214, 252);
+  cursor: pointer;
+}
+.navigation-button-container {
+  display: flex;
+}
+#search-form {
+  margin-left: 10%;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 30%;
+  min-width: 200px;
+  height: 20px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  margin-top: 40px;
+}
+
+/* @media only screen and (max-width: 1000px){
+  body{
+    max-width:600px;
+
+  }
+  #data-table{
+    min-width:600px;
+  }
+} */
